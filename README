@@ -26,7 +26,8 @@ BUILDING AND RUNNING THE TEST PROGRAM
 To build, run
   $ make
   $ mkdir tmpdir
-  $ ./test -d tmpdir
+  $ touch testops
+  $ ./test -d tmpdir -t 512 -o testops
 
 The test takes about a minute to run and should print "Test PASSED".
 The test performs a random sequence of operations on a betree and on
